@@ -1,7 +1,7 @@
 <?php
 $n1 = ' ';
 $n2 = ' ';
-$caculate = '/// ';
+$caculate = ' ';
 $result = ' ';
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     // echo '<pre>';
