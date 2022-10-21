@@ -10,9 +10,9 @@ define('Pi2','3.14');
 //xuất
 //echo:string,number
 //print:string,number
-echo $name;
+echo $gender;
 echo '<br>';
-echo $age;
+print $gender; 
 // var_dump: all,kiểu dữ liệu + kiểu dữ liệu
 echo "<br>";
 var_dump($gender);
