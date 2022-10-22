@@ -10,11 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "lỗi";
     };
 };
-if(filter_var($email, FILTER_VALIDATE_EMAIL) == ''){
-    echo "true";
-}else{
-    echo "false";
-}
+    if(filter_var($email, FILTER_VALIDATE_EMAIL) == ''){
+        echo "true";
+    }else{
+        echo "false";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
