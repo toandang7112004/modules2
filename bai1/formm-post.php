@@ -2,16 +2,16 @@
 //ktr nguoi dung gui du lieu hay chua
     if($_SERVER['REQUEST_METHOD']=='POST'){
 //hien thi thong tin
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
+    // echo '<pre>';
+    // print_r($_POST);
+    // echo '</pre>';
 //khai bao
-    $Username = $_POST['Username'];
-    $Password = $_POST['Password'];
+    $mail = $_POST['email'];
+    $pass = $_POST['passwork'];
 // xuat ra
-    echo 'ten dang nhap :'.$Username;
+    echo 'ten dang nhap :'.$mail;
     echo '<br>';
-    echo 'mat khau la:'.$Password;
+    echo 'mat khau la:'.$pass;
 }
 ?>
 <!DOCTYPE html>
@@ -24,9 +24,9 @@
 </head>
 <body>
     <form action="" method="post">
-        Username <input type="text" name="Username" id=""> <br>
-        Password <input type="password" name="Password" id=""> <br>
-        <input type="submit" value="Login">
+        Email <input type="text" name="email" id=""> <br>
+        Password <input type="password" name="passwork" id=""> <br>
+        <input type="submit" value="đăng nhập">
     </form>
 </body>
 </html>

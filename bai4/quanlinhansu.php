@@ -1,6 +1,4 @@
 
-Sáo Trúc Thanh Trường
-  2:32 PM
 <?php
 if ( $_SERVER['REQUEST_METHOD']== 'POST') {
     $Ho = $_REQUEST['Ho'];
