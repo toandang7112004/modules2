@@ -1,13 +1,11 @@
 <?php
-  $USD = ' ';
-  $rate = '23.000';
-  $VND = ' ';
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $USD = $_POST['USD'];
-    if($USD > 0){
-        $VND =$USD*23.0000 ;
+    $account = $_POST['account'];
+    $pattern = '/[_A-Za-z0-9]{6,}/';
+    if(preg_match($pattern,$account) ){
+        echo 'thành công';
     }else{
-        echo $VND='lỗi';
+        echo 'k thành công';
     }
 }
 ?>
@@ -21,10 +19,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 </head>
 <body>
     <form action="" method="post">
-    số tiền USD <input type="text" name="USD" id="" value="<?php echo $USD; ?>">
-    <br>
-    <input type="submit" value="chuyển đổi">
-    <p>VND="<?php echo $VND; ?>"</p>
+        <input type="text" name="account" id="">
+        <input type="submit" value="nhập">
     </form>
 </body>
 </html>
